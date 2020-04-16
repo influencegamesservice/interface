@@ -27,6 +27,9 @@ class ABSBaseMongoDB(metaclass=ABCMeta):
         for d in documents:
             print(d)
 
+class ABSGet_Twitch_Data_From_MongoDB(ABSBaseMongoDB):
+    pass
+
 class Abstractmongodb(ABSBaseMongoDB):
 
     @abstractmethod
