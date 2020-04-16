@@ -1,6 +1,5 @@
 from pymongo import MongoClient
 from abc import ABCMeta, abstractmethod
-import mainsetting
 
 class ABSBaseMongoDB(metaclass=ABCMeta):
 
