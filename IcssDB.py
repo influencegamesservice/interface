@@ -1,0 +1,3 @@
+
+class Abcssdb(metaclass=ABCMeta):
+    
