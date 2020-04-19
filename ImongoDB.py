@@ -22,13 +22,24 @@ class ABSBaseMongoDB(metaclass=ABCMeta):
         collection.update_many(filter, update)
     
     @staticmethod
+    def ALLDOCUMENTreturn(collection):
+        return collection.find({})
+    
+    @staticmethod
     def ALLDOCUMENTprint(collection):
         documents = collection.find({})
         for d in documents:
             print(d)
 
 class ABSGet_Twitch_Data_From_MongoDB(ABSBaseMongoDB):
-    pass
+
+    def __init__(self):
+        super().__init__()
+    
+
+    @abstractmethod
+    def get_all_game_data(self):
+        pass
 
 class Abstractmongodb(ABSBaseMongoDB):
 
