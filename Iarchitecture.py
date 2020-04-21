@@ -1,5 +1,7 @@
 from abc import ABCMeta, abstractmethod
-import mainsetting
+
+class ABSFlaskServerModel(metaclass=ABCMeta):
+    pass
 
 class ABmodel(metaclass=ABCMeta):
 
