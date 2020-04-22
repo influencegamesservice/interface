@@ -26,11 +26,11 @@ class ABmodel(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def set_all_game_info_to_CSS(self, all_game_info:dict):
+    def set_all_game_twitch_data_info_to_CSS(self, all_game_info:dict):
         pass
 
     @abstractmethod
-    def set_all_streamer_info_to_CSS(self, all_streamer_info:dict):
+    def set_all_streamer_twitch_data_info_to_CSS(self, all_streamer_info:dict):
         pass
 
 class ABcontroller(metaclass=ABCMeta):
