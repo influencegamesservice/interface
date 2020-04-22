@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
-class ABStwitchCssDataBase(metaclass=ABCMeta):
+class ABStwitchCsvDataBase(metaclass=ABCMeta):
     """twitch用のCSSDataBaseの抽象クラス"""
 
     def __init__(self):
